@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Layanan Administrasi - Desa Harmoni</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+
+                <img src="../assets/logo.png" class="logo-img" alt="Logo Desa">
+
+                <div class="ms-2">
+                    <div class="desa-name">Desa Harmoni</div>
+                    <small>Kecamatan Sejahtera</small>
+                </div>
+
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="informasi.html">Informasi Desa</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="layanan.html">Layanan</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pengumuman.html">Pengumuman</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+
+                <li class="nav-item"><a class="nav-link" href="../admin/login.html"><i class="bi bi-shield-lock me-1"></i>Admin</a></li>
+                    </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <span>
+                PELAYANAN PUBLIK
+            </span>
+
+            <h1>
+                Layanan Administrasi
+            </h1>
+
+            <p>
+                Ajukan layanan administrasi desa dengan mudah dan cepat.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <div class="breadcrumb-section">
+
+        <div class="container">
+
+            <small>
+                <a href="index.html">Beranda</a>
+                <i class="bi bi-chevron-right"></i>
+                Layanan Administrasi
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <section class="content-section bg-soft">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-3">
+
+                    <div class="side-menu">
+
+                        <h5>
+                            Kategori Layanan
+                        </h5>
+
+                        <a href="#" class="side-link active">
+                            <i class="bi bi-grid"></i>
+                            Semua Layanan
+                        </a>
+
+                        <a href="#" class="side-link">
+                            <i class="bi bi-person-vcard"></i>
+                            Administrasi Kependudukan
+                        </a>
+
+                        <a href="#" class="side-link">
+                            <i class="bi bi-file-text"></i>
+                            Surat Keterangan
+                        </a>
+
+                        <a href="#" class="side-link">
+                            <i class="bi bi-people"></i>
+                            Kartu Keluarga
+                        </a>
+
+                        <a href="#" class="side-link">
+                            <i class="bi bi-file-earmark-medical"></i>
+                            Akta Kelahiran
+                        </a>
+
+                        <a href="#" class="side-link">
+                            <i class="bi bi-file-earmark-x"></i>
+                            Akta Kematian
+                        </a>
+
+
+                        <div class="help-card">
+
+                            <i class="bi bi-question-circle"></i>
+
+                            <h6>
+                                Butuh bantuan?
+                            </h6>
+
+                            <p>
+                                Hubungi petugas desa melalui kontak yang tersedia.
+                            </p>
+
+                            <a href="kontak.html" class="btn btn-outline-success btn-sm">
+                                Lihat Kontak
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-9">
+
+                    <div class="service-search">
+
+                        <i class="bi bi-search"></i>
+
+                        <input type="text" id="serviceSearch" placeholder="Cari layanan yang Anda butuhkan...">
+
+                    </div>
+
+
+                    <div class="content-title-row">
+
+                        <div>
+                            <span class="section-label">
+                                PELAYANAN
+                            </span>
+
+                            <h2>
+                                Daftar Layanan Administrasi
+                            </h2>
+                        </div>
+
+                        <span class="service-count">
+                            6 Layanan
+                        </span>
+
+                    </div>
+
+
+                    <div class="row g-4" id="serviceList">
+
+
+                        <div class="col-md-6 service-column">
+
+                            <div class="service-detail-card">
+
+                                <div class="service-detail-icon blue">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </div>
+
+                                <h5>
+                                    Surat Keterangan Domisili
+                                </h5>
+
+                                <p>
+                                    Surat keterangan domisili untuk
+                                    keperluan administrasi.
+                                </p>
+
+                                <a href="#" class="btn btn-success btn-sm">
+                                    Ajukan Layanan
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-6 service-column">
+
+                            <div class="service-detail-card">
+
+                                <div class="service-detail-icon green">
+                                    <i class="bi bi-shop"></i>
+                                </div>
+
+                                <h5>
+                                    Surat Keterangan Usaha
+                                </h5>
+
+                                <p>
+                                    Surat keterangan usaha untuk
+                                    keperluan bisnis.
+                                </p>
+
+                                <a href="#" class="btn btn-success btn-sm">
+                                    Ajukan Layanan
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-6 service-column">
+
+                            <div class="service-detail-card">
+
+                                <div class="service-detail-icon orange">
+                                    <i class="bi bi-people"></i>
+                                </div>
+
+                                <h5>
+                                    Kartu Keluarga (KK)
+                                </h5>
+
+                                <p>
+                                    Pengurusan kartu keluarga baru
+                                    atau perubahan data.
+                                </p>
+
+                                <a href="#" class="btn btn-success btn-sm">
+                                    Ajukan Layanan
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-6 service-column">
+
+                            <div class="service-detail-card">
+
+                                <div class="service-detail-icon purple">
+                                    <i class="bi bi-file-earmark-medical"></i>
+                                </div>
+
+                                <h5>
+                                    Akta Kelahiran
+                                </h5>
+
+                                <p>
+                                    Pengurusan akta kelahiran
+                                    untuk warga desa.
+                                </p>
+
+                                <a href="#" class="btn btn-success btn-sm">
+                                    Ajukan Layanan
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-6 service-column">
+
+                            <div class="service-detail-card">
+
+                                <div class="service-detail-icon green">
+                                    <i class="bi bi-file-earmark-check"></i>
+                                </div>
+
+                                <h5>
+                                    Akta Kematian
+                                </h5>
+
+                                <p>
+                                    Pengurusan akta kematian
+                                    untuk warga desa.
+                                </p>
+
+                                <a href="#" class="btn btn-success btn-sm">
+                                    Ajukan Layanan
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-6 service-column">
+
+                            <div class="service-detail-card">
+
+                                <div class="service-detail-icon red">
+                                    <i class="bi bi-arrow-left-right"></i>
+                                </div>
+
+                                <h5>
+                                    Surat Pindah
+                                </h5>
+
+                                <p>
+                                    Pengurusan surat pindah
+                                    domisili.
+                                </p>
+
+                                <a href="#" class="btn btn-success btn-sm">
+                                    Ajukan Layanan
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="flow-card">
+
+                        <div class="text-center mb-4">
+
+                            <span class="section-label">
+                                PROSES
+                            </span>
+
+                            <h3>
+                                Alur Pengajuan Layanan
+                            </h3>
+
+                        </div>
+
+
+                        <div class="row g-4">
+
+
+                            <div class="col-6 col-lg-3">
+
+                                <div class="flow-item">
+
+                                    <div class="flow-number">
+                                        1
+                                    </div>
+
+                                    <h6>
+                                        Pilih Layanan
+                                    </h6>
+
+                                    <p>
+                                        Pilih layanan yang ingin diajukan.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-6 col-lg-3">
+
+                                <div class="flow-item">
+
+                                    <div class="flow-number">
+                                        2
+                                    </div>
+
+                                    <h6>
+                                        Isi Formulir
+                                    </h6>
+
+                                    <p>
+                                        Lengkapi data yang diperlukan.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-6 col-lg-3">
+
+                                <div class="flow-item">
+
+                                    <div class="flow-number">
+                                        3
+                                    </div>
+
+                                    <h6>
+                                        Verifikasi
+                                    </h6>
+
+                                    <p>
+                                        Petugas memeriksa data pengajuan.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-6 col-lg-3">
+
+                                <div class="flow-item">
+
+                                    <div class="flow-number success">
+                                        <i class="bi bi-check"></i>
+                                    </div>
+
+                                    <h6>
+                                        Selesai
+                                    </h6>
+
+                                    <p>
+                                        Layanan selesai diproses.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-5">
+
+                    <div class="footer-brand">
+
+                        <img src="../assets/logo.png" class="footer-logo" alt="Logo Desa">
+
+                        <div>
+                            <h5>Desa Harmoni</h5>
+                            <small>Kecamatan Sejahtera</small>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Membangun desa yang lebih maju,
+                        mandiri dan sejahtera.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <h6>Kontak</h6>
+
+                    <p>
+                        <i class="bi bi-geo-alt"></i>
+                        Jl. Desa Harmoni No. 10
+                    </p>
+
+                    <p>
+                        <i class="bi bi-telephone"></i>
+                        (0351) 1234567
+                    </p>
+
+                    <p>
+                        <i class="bi bi-envelope"></i>
+                        desa.harmoni@desa.id
+                    </p>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <h6>Ikuti Kami</h6>
+
+                    <div class="social-links">
+
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 Desa Harmoni. Semua Hak Dilindungi.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

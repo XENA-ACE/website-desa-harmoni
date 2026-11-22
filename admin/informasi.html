@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manajemen Informasi - Admin Desa Harmoni</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+</head><body>
+<div class="container-fluid"><div class="row">
+<aside class="col-lg-2 p-3 admin-sidebar">
+<a href="index.html" class="admin-brand"><img src="../assets/logo.png" class="admin-logo" alt="Logo Desa Harmoni"><span>ADMINISTRATOR</span></a>
+<nav><a href="index.html" class=""><i class="bi bi-speedometer2 me-2"></i>Dashboard</a>
+<a href="informasi.html" class="active"><i class="bi bi-info-circle me-2"></i>Manajemen Informasi</a>
+<a href="layanan.html" class=""><i class="bi bi-file-earmark-check me-2"></i>Verifikasi Layanan</a>
+<a href="pengunjung.html" class=""><i class="bi bi-bar-chart me-2"></i>Laporan Pengunjung</a>
+<a href="pengumuman.html" class=""><i class="bi bi-megaphone me-2"></i>Manajemen Pengumuman</a></nav><hr class="border-secondary">
+<a href="../users/index.html"><i class="bi bi-globe2 me-2"></i>Lihat Website</a>
+</aside>
+<main class="col-lg-10 p-4 admin-main">
+<header class="admin-header mb-4"><div><h1 class="fw-bold mb-1">Manajemen Informasi</h1><p class="text-muted mb-0">Mengelola profil, visi dan misi, serta informasi pemerintahan desa.</p></div><div class="d-flex align-items-center gap-2"><span class="admin-date"><i class="bi bi-calendar3 me-2"></i><span id="adminToday"></span></span><span class="badge text-bg-success p-2">Administrator</span></div></header>
+
+<div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+ <div><h5 class="fw-bold mb-1">Daftar Informasi Desa</h5><small class="text-muted">Kelola informasi yang ditampilkan pada halaman Informasi Desa.</small></div>
+ <button class="btn btn-success" id="addInfoBtn"><i class="bi bi-plus-lg me-1"></i>Tambah Informasi</button>
+</div>
+<div class="row g-3 mb-4" id="infoSummaryCards">
+ <div class="col-md-4"><div class="card dashboard-card p-3"><small class="text-muted">Profil Desa</small><h5 class="mb-0" id="infoProfileCount">-</h5></div></div>
+ <div class="col-md-4"><div class="card dashboard-card p-3"><small class="text-muted">Visi dan Misi</small><h5 class="mb-0" id="infoVisionCount">-</h5></div></div>
+ <div class="col-md-4"><div class="card dashboard-card p-3"><small class="text-muted">Struktur Pemerintahan</small><h5 class="mb-0" id="infoStructureCount">-</h5></div></div>
+</div>
+<div class="card dashboard-card p-3 p-md-4"><div class="table-responsive"><table class="table table-hover align-middle mb-0"><thead><tr><th>No.</th><th>Judul Informasi</th><th>Kategori</th><th>Terakhir Diperbarui</th><th>Aksi</th></tr></thead><tbody id="infoTableBody"></tbody></table></div></div>
+<div class="alert alert-info mt-3 mb-0 small">Perubahan disimpan di localStorage browser ini dan ditampilkan pada halaman User yang dibuka di browser yang sama.</div>
+
+<footer class="admin-footer"><span>© 2026 Desa Harmoni</span><span>Prototype Website Informasi dan Pelayanan Publik Desa</span></footer>
+</main></div></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script><script src="../js/script.js"></script>
+</body></html>
